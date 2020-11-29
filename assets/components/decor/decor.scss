@@ -1,0 +1,14 @@
+.decor {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -4%;
+  right: 0;
+
+  @each $icon in (rhomb, trigle) {
+    &--#{$icon} {
+      background-image: url(./images/icons/decor/#{$icon}.svg);
+      background-repeat: no-repeat;
+    }
+  }
+}

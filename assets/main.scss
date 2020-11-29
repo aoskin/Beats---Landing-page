@@ -1,0 +1,38 @@
+/*fonts*/
+@font-face {
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/play/play-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Play';
+  font-style: bold;
+  font-weight: 700;
+  src: url('./fonts/play/play-bold.woff2') format('woff2');
+}
+
+/*variables*/
+$bg-color-grey: #F5F5F5;
+$bg-color-white: #fff;
+$color-black-light: #292929;
+$color-grey-light: #666666;
+$accent-color: #E01F3D;
+$margin-section: 2.5%;
+
+/*imports*/
+@import './components/page-pagination/page-pagination.scss';
+@import './components/section/section.scss';
+@import './components/hero/hero.scss';
+@import './components/phone/phone.scss';
+@import './components/decor/decor.scss';
+@import './components/title-block/title-block.scss';
+@import './components/page-header/page-header.scss';
+@import './components/logo/logo.scss';
+@import './components/page-navigation/page-navigation.scss';
+@import './components/reviews/reviews.scss';
+@import './components/primary-button/primary-button.scss';
+@import './components/advantage/advantage.scss';
+@import './components/form-delivery/form-delivery.scss';
+@import './components/checkbox/checkbox.scss';
+@import './components/radio/radio.scss';

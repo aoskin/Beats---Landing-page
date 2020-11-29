@@ -1,0 +1,68 @@
+.form-delivery {
+  max-width: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  &__group {
+    max-width: 100%;
+    display: flex;
+    margin-top: 1em;
+
+    &:first-child {
+      .form-delivery__label:first-child {
+        margin-right: 5%;
+      }
+    }
+
+    &--center {
+      justify-content: center;
+    }
+
+    &--buttons {
+      margin-top: 5vh;
+      flex-wrap: wrap;
+      line-height: 2.5;
+    }
+
+  }
+
+  &__label {
+    width: 100%;
+    height: 10vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.8;
+
+    &--number {
+      max-width: 21.25%;
+      margin-right: 5%;
+    }
+
+    &--pay,
+    &--checkbox,
+    &--buttons {
+      flex-direction: row;
+      justify-content: center;
+      height: 5vh;
+    }
+  }
+
+  &__input {
+    height: 50%;
+    border-radius: 5px;
+    border: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: inset 0 0 0 transparent, 0 0 0 2px $accent-color, 0 -3px 10px 0px hsla(0,0%,39.2%,.5);
+    }
+  }
+
+}

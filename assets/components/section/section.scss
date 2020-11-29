@@ -1,0 +1,22 @@
+.section {
+  height: 100%;
+  font-family: Play;
+  text-align: center;
+
+
+  &--delivery {
+    background: url(./images/bg-form.png);
+    background-size: cover;
+    padding-bottom: 10vh;
+  }
+
+  &__container {
+    height: 100vh;
+    margin: 0 $margin-section * 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+}

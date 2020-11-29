@@ -1,0 +1,22 @@
+.phone {
+  display: flex;
+  align-items: center;
+  
+
+  &__icon {
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    display: block;
+    background-image: url(./images/icons/phone.svg);
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+
+  &__number {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.5;
+    font-size: 1.2em;
+  }
+}

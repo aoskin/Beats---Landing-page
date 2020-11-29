@@ -1,0 +1,45 @@
+.page-pagination {
+  display: none;
+
+  @media screen and (min-width: 1100px) {
+    display: flex;
+    position: fixed;
+    top: 5.625rem;
+    right: 1rem;
+    top: 40%;
+    z-index: 1;
+
+    &__item {
+      list-style: none;
+    }
+
+    &__link {
+      display: flex;
+      width: 1rem;
+      height: 1rem;
+      margin-bottom: .3125rem;
+      border: .0625rem solid transparent;
+      border-radius: 50%;
+      cursor: pointer;
+      
+      &::after {
+        display: block;
+        margin: auto;
+        content: '';
+        width: .375rem;
+        height: .375rem;
+        border-radius: 50%;
+        background-color: $color-black-light;
+      } 
+    &:hover,
+    &--active {
+      border-color: $accent-color;
+      &::after {
+        background-color: $accent-color;
+      }
+    }
+  }
+  }
+
+  
+}
