@@ -18,7 +18,7 @@
 }
 @media screen and (min-width: 1100px) {
   .page-pagination {
-    display: flex;
+    display: block;
     position: fixed;
     top: 5.625rem;
     right: 1rem;
