@@ -17,13 +17,13 @@ $default-border: #fff;
       &::before {
         content: '';
         display: inline-block;
-        width: 2em;
-        height: 2em;
+        width: 2rem;
+        height: 2rem;
         flex-shrink: 0;
         flex-grow: 0;
         border: 1px solid $default-border;
-        border-radius: 0.25em;
-        margin-right: 0.5em;
+        border-radius: 0.25rem;
+        margin-right: 0.5rem;
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50% 50%;

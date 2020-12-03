@@ -1,14 +1,21 @@
 .decor {
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   position: absolute;
-  top: -4%;
-  right: 0;
+  top: 97%;
+  right: 2%;
+  z-index: 10;
 
-  @each $icon in (rhomb, trigle) {
+  @each $icon in (rhomb, trigle, line, circle) {
     &--#{$icon} {
       background-image: url(./images/icons/decor/#{$icon}.svg);
       background-repeat: no-repeat;
     }
+  }
+  &--trigle {
+    right: 90%;
+  }
+  &--circle {
+    right: 90%;
   }
 }

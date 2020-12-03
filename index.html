@@ -75,21 +75,28 @@
             <button type="button" class="primary-button">Заказать</button>
             <ul class="hero__advantage-list">
               <li class="hero__advantage-item">
-                <span class="hero__advantage-icon hero__advantage-icon--hero-sound"></span>
+                <svg class="hero__advantage-icon">
+                  <use xlink:href="./assets/images/icons/sprite.svg#hero-sound"></use>
+                </svg>
                 <p class="hero__advantage-text">Безупречный звук</p>
               </li>
               <li class="hero__advantage-item">
-                <span class="hero__advantage-icon hero__advantage-icon--hero-battery"></span>
+                <svg class="hero__advantage-icon">
+                  <use xlink:href="./assets/images/icons/sprite.svg#hero-buttery"></use>
+                </svg>
                 <p class="hero__advantage-text">До 40 часов работы</p>
               </li>
               <li class="hero__advantage-item">
-                <span class="hero__advantage-icon hero__advantage-icon--hero-fuel"></span>
+                <svg class="hero__advantage-icon">
+                  <use xlink:href="./assets/images/icons/sprite.svg#hero-fuel"></use>
+                </svg>
                 <p class="hero__advantage-text">Технология Fast Fuel</p>
               </li>
             </ul>
           </div>
         </div>
       </div>
+      <div class="decor decor--line"></div>
     </section>
     <section class="section advantage">
       <div class="section__container">
@@ -100,14 +107,18 @@
         </div>
           <ul class="advantage__list">
             <li class="advantage__item">
-              <div class="advantage__item-icon advantage__item-icon--time"></div>
+              <svg class="advantage__item-icon">
+                <use xlink:href="./assets/images/icons/sprite.svg#time"></use>
+              </svg>
               <div class="advantage__item-content">
                 <b class="advantage__item-title">40 часов работы</b>
                 <p class="advantage__item-description">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день.</p>
               </div>
             </li>
             <li class="advantage__item">
-              <div class="advantage__item-icon advantage__item-icon--sound"></div>
+              <svg class="advantage__item-icon">
+                <use xlink:href="./assets/images/icons/sprite.svg#sound"></use>
+              </svg>
               <div class="advantage__item-content">
                 <b class="advantage__item-title">Фирменное звучание</b>
                 <p class="advantage__item-description">Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — 
@@ -115,7 +126,9 @@
               </div>
             </li>
             <li class="advantage__item">
-              <div class="advantage__item-icon advantage__item-icon--battery"></div>
+              <svg class="advantage__item-icon">
+                <use xlink:href="./assets/images/icons/sprite.svg#battery"></use>
+              </svg>
               <div class="advantage__item-content">
                 <b class="advantage__item-title">Быстрая зарядка</b>
                 <p class="advantage__item-description">Благодаря технологии Fast Fuel всего через 5 минут зарядки вы сможете слушать музыку ещё 3 часа.</p>
@@ -164,17 +177,23 @@
           <div class="reviews__image reviews__image--2 reviews__image--thumb"></div>
           <div class="reviews__image reviews__image--3 reviews__image--thumb"></div>
         </div>
+      <div class="decor decor--circle"></div>
+    </section>
+    <section class="section section--work">
+      <div class="title-block">
+        <h2 class="title-block__name">как мы работаем</h2>
+      </div>
+      <div class="decor decor--rhomb"></div>
     </section>
     <section class="section section--delivery">
       <div class="section__container">
-        <div class="decor decor--rhomb"></div>
         <div class="title-block">
           <h2 class="title-block__name title-block__name--delivery">закажите доставку</h2>
         </div>
         <form action="" class="form-delivery" name="delivery">
           <div class="form-delivery__wrapper">
             <div class="form-delivery__group"> 
-              <label for="name" class="form-delivery__label form-delivery__label">Имя
+              <label for="name" class="form-delivery__label">Имя
                 <input class="form-delivery__input" type="text" name="delivery" id="name">
               </label>
               <label for="telephone" class="form-delivery__label">Телефон
@@ -200,12 +219,14 @@
                 <input class="form-delivery__input" type="number" name="delivery" id="floor" min="1">
               </label>
             </div>
+          </div>
+          <div class="form-delivery__wrapper">
             <div class="form-delivery__group"> 
-              <label for="comments" class="form-delivery__label">Комментарий
-                <textarea name="delivery" id="comments" cols="30" rows="10"></textarea>
+              <label for="comments" class="form-delivery__label form-delivery__label--comments">Комментарий
+                <textarea name="delivery" id="comments" cols="30" rows="30"></textarea>
               </label>
             </div>
-            <div class="form-delivery__group form-delivery__group--buttons form-delivery__group--center"> 
+            <div class="form-delivery__group form-delivery__group--buttons form-delivery__group--pay"> 
               <div class="radio">
                 <input class="radio__inner" type="radio" id="pay-cash" name="delivery" value="pay-cash">
                 <label for="pay-cash" class="form-delivery__label form-delivery__label--pay">Потребуется сдача</label>
@@ -219,13 +240,38 @@
                 <label for="not-call">Не перезванивать</label>
               </div>
             </div>
-            <div class="form-delivery__group form-delivery__group--center form-delivery__group--buttons">
+            <div class="form-delivery__group form-delivery__group--buttons">
               <input type="button" value="Заказать" class="primary-button primary-button--form"> 
               <input type="reset" value="Очистить" class="primary-button primary-button--form primary-button--clear"> 
             </div>
           </div>
         </form>
       </div>
+    </section>
+    <section class="section section--contacts">
+      <footer class="page-footer">
+        <div class="page-footer__contacts">
+          <p class="page-footer__adress">Москва, ул.Новый Арбат, д.31/12</p>
+          <div class="phone page-footer__phone">
+            <span class="phone__icon"></span>
+            <a href="" class="phone__number">8 800 903 90 90</a>
+          </div>
+        </div>
+        <div class="socials page-footer__socials">
+          <svg class="socials__icon">
+            <use xlink:href="./assets/images/icons/sprite.svg#vk"></use>
+          </svg>
+          <svg class="socials__icon">
+            <use xlink:href="./assets/images/icons/sprite.svg#fb"></use>
+          </svg>
+          <svg class="socials__icon">
+            <use xlink:href="./assets/images/icons/sprite.svg#insta"></use>
+          </svg>
+          <svg class="socials__icon">
+            <use xlink:href="./assets/images/icons/sprite.svg#twit"></use>
+          </svg>
+        </div>
+      </footer>
     </section>
   </div>
   

@@ -15,8 +15,10 @@
 /*variables*/
 $bg-color-grey: #F5F5F5;
 $bg-color-white: #fff;
+$bg-color-dark-grey: #333537;
 $color-black-light: #292929;
 $color-grey-light: #666666;
+$color-grey: #b3b3b3;
 $accent-color: #E01F3D;
 $margin-section: 2.5%;
 
@@ -36,3 +38,5 @@ $margin-section: 2.5%;
 @import './components/form-delivery/form-delivery.scss';
 @import './components/checkbox/checkbox.scss';
 @import './components/radio/radio.scss';
+@import './components/page-footer/page-footer.scss';
+@import './components/socials/socials.scss';
