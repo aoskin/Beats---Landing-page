@@ -1,4 +1,4 @@
-/*fonts*/
+//fonts
 @font-face {
   font-family: 'Play';
   font-style: normal;
@@ -12,7 +12,7 @@
   src: url('./fonts/play/play-bold.woff2') format('woff2');
 }
 
-/*variables*/
+//variables
 $bg-color-grey: #F5F5F5;
 $bg-color-white: #fff;
 $bg-color-dark-grey: #333537;
@@ -21,8 +21,18 @@ $color-grey-light: #666666;
 $color-grey: #b3b3b3;
 $accent-color: #E01F3D;
 $margin-section: 2.5%;
+$baseFontSize: 18px;
+$containerWidth: 940px;
 
-/*imports*/
+//breackpoints
+$tablets: '768px';
+$display: '1100px';
+
+
+//media
+@import './media.scss';
+
+/*components*/
 @import './components/page-pagination/page-pagination.scss';
 @import './components/section/section.scss';
 @import './components/hero/hero.scss';
